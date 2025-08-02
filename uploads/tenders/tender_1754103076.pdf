@@ -1,0 +1,120 @@
+Course Project Title:
+Smart Tender Portal (TenderGate)
+DeadLine: August 1, 2025
+Project Description:
+Students will collaboratively build a full-stack web application where businesses can post and
+manage tender opportunities, and users can register, browse tenders, apply, and respond to
+dynamic question sets.
+Core Modules and Features:
+Authentication System
+● Signup/Login for Admin and Users (using PHP and MySQL)
+● Role-based access control (Admin vs. User)
+Tender Management (Admin
+````````````````````````````````````````````````````````````````````````````````````````````````````````````
+```````````````````````````````````````Panel)
+● Create, Read, Update, Delete (CRUD) tender posts
+● Add tender-specific details (title, description, deadline, documents)
+● Create question banks for each tender optional
+● Review submitted tender applications with answers
+Tender Question Bank (optional)
+● Admin can build reusable question sets for tenders
+● Questions can be single choice, multiple choice, or open-ended
+User Interactions
+● Register and manage personal profile
+● Browse available tenders
+● Apply to tenders and answer custom questions
+● View application history
+
+
+--- PAGE 1 ---
+
+Admin Dashboard
+● View all registered users
+● Manage tenders and applications
+● Analytics section (e.g., number of applicants per tender)
+Tech Stack Coverage
+Technology Usage
+HTML5 & CSS3 Structural layout and styling
+Bootstrap / Tailwind CSS / Font Responsive design, components, and icons
+Awesome
+JavaScript / jQuery Ajax DOM manipulation, form validation, dynamic
+interaction
+PHP Server-side logic, session management, form
+processing
+MySQL Database for users, tenders, and responses
+Bonus Features (Optional for Advanced Students):
+● File upload for tender documents
+● Email notifications on tender status
+● Filter and search functionality
+Learning Outcomes
+By the end of the project, students will be able to:
+● Build a secure, database-driven web application
+● Implement responsive UI using modern CSS frameworks
+
+
+--- PAGE 2 ---
+
+● Manage user sessions and data flow between frontend and backend
+● Structure codebases for maintainability and scalability
+Grading Rubric
+Criteria Description Point
+s
+1. Functionality Project implements required features (CRUD, login, 4
+tender management, question bank).
+2. UI/UX Design Clean layout, intuitive navigation, responsive on all 2
+devices, good use of Bootstrap/Tailwind.
+3. Form Validation & UX Client-side + server-side validation, real-time feedback 2
+Feedback on user actions.
+4. Security Practices , use of sessions, basic access control (admin/user 2
+separation).
+5. Code Quality & Clean, modular code (HTML/PHP separation, reusable 2
+Structure components, consistent formatting).
+6. Project Presentation Clear demo, team explains logic and design decisions, 3
+and GitHub ability to answer questions confidently.
+7. Bonus Features / Search/filter, email alerts, file uploads, analytics, or any +1
+Creativity (Optional) thoughtful extension of the core app.Proper input
+sanitization
+
+
+--- PAGE 3 ---
+
+Field Name Type Description
+id Long Unique identifier for each tender
+title String Brief, descriptive name of the tender
+descripti String Detailed overview of the tender
+on
+status String e.g. OPEN, CLOSED, AWARDED
+(Enum)
+startDate Date When the tender becomes available
+endDate Date Deadline for submissions
+fileUrl String Link or path to uploaded document (e.g. PDF)
+category String Type or domain of the tender (e.g. IT, Construction)
+createdAt Timestamp Auto-generated when tender is created
+updatedAt Timestamp Auto-updated on modification
+postedBy User User who created the tender
+reference
+User Entity
+Field Name Type Description
+id Long Unique identifier
+name String Full name of the user
+email String Unique email for login/contact
+password String Securely stored password
+(Hashed)
+role String (Enum) e.g. ADMIN, VENDOR, VIEWER
+
+
+--- PAGE 4 ---
+
+createdAt Timestamp User registration date
+isActive Boolean Indicates if user account is
+active
+Password Validation Requirements
+On both signup and login forms:
+● Minimum 8 characters
+● At least 1 uppercase letter
+● At least 1 special character (e.g. ! @ # $ % ^ & *)
+● Real-time visual feedback for strength & completeness
+
+
+--- PAGE 5 ---
+
